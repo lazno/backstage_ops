@@ -16,7 +16,7 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: '/mnt/data'
+    path: '/mnt/pg-data'
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
