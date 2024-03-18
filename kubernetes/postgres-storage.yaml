@@ -23,6 +23,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-storage-claim
   namespace: backstage
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   storageClassName: manual
   accessModes:

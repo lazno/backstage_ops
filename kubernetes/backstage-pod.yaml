@@ -5,7 +5,7 @@ metadata:
   name: backstage
   namespace: backstage
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   replicas: 1
   selector:
