@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-backstage
+  namespace: backstage
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+spec:
+  tls:
+  - hosts:
+      - backstage.lazzeri.space
+    secretName: backstage-tls-secret
+  rules:
+  - host: backstage.lazzeri.space
+    http:
+      paths:
+      - path: / 
+        pathType: Prefix  
+        backend:
+          service:
+            name: backstage
+            port:
+              number: 80
