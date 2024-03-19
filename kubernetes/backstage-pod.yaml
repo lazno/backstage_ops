@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: lazno/backstage:8ed0a36
+          image: lazno/backstage:v0.3.0
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
