@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: backstage
+resources:
+  - backstage-ingress.yaml
+  - backstage-namespace.yaml
+  - backstage-pod.yaml
+  - backstage-secret.yaml
+  - backstage-service.yaml
+  - backstage-tls-secret.yaml
+  - postgres-secret.yaml
+  - postgres-service.yaml
+  - postgres-storage.yaml
+  - postgres.yaml
