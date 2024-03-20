@@ -1,0 +1,6 @@
+---
+resources:
+  - ../../base
+images:
+  - name: lazno/backstage
+    newTag: v0.2.0
