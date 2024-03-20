@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - lazno/backstage:v0.3.0
